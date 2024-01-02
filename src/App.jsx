@@ -1,19 +1,16 @@
-
+// App.jsx
 import React from 'react';
-import Header from './components/Header.jsx'; 
-// import Main from './components/Main.jsx';
-import Footer from './components/Footer.jsx';
+import Header from './components/Header';
+import ImageGallery from './components/ImageGallery';
+import './App.css'
 
 const App = () => {
-  const sampleData = "Sample Data";
-
   return (
-    <div className="app">
+    <>
       <Header />
-      {/* <Main data={sampleData} /> */}
-      <Footer />
-    </div>
+      <ImageGallery />
+    </>
   );
-}
+};
 
 export default App;
